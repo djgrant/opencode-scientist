@@ -10,25 +10,25 @@ Excels at operating long-horizon, multi-task projects.
 
 I am still experimenting with this setup, but I have found it very valuable for two particular use-cases:
 1. Personal applications e.g. holiday planner, home automation etc.
-2. Feasibilty explorations e.g. building out large features to generate insights
+2. Feasibilty experiments e.g. building large features to generate insights
 
 Whether you decide to ship the code this system produces, or use it as the inspiration for a more-considered build, will depend on entirely on your context and risk tolerance.
 
-The system may also be valuable to developers who gain less enjoyment from spending all day steering agents. The long-running projects create a meaningful interval to divert attention onto more focussed tasks.
+The system may also be valuable to developers who gain less enjoyment from steering agents. Once a long-running project starts, there is a meaningfully long interval to divert attention onto more focussed tasks.
 
 ## How to Use
 
-The most important agent in this setup is you.
+The most important agent in this setup is _you_.
 
 A clear, well-thought-out vision is to an LLM what a good data structure is to code.
 
-I recommend trying the following workflow:
+I suggest starting with the following workflow:
 
 1. Start opencode in *plan* mode and explain your vision to the agent
 2. Feel free to leave some questions open-ended at this stage (exploration can be delegated to subagents)
-3. Once the vision is well-formed ask the *plan* agent to create a "scoping work package" to capture the vision and areas to explore 
-4. Compact the conversation
-5. Switch to *delegate* mode (tab key), and ask the agent to read the work package and execute the vision
+3. Once the vision is well-formed ask the *plan* agent to create a *"scoping work package"* to capture the vision and areas to explore 
+4. Compact the conversation (/compact)
+5. Switch to *delegate* mode (tab key), then ask the agent to *"read the work package and execute the vision"*
 
 The *delegate* agent will then use subagents to create more detailed work packages, which, in turn, get delegated to other subagents to implement.
 
@@ -66,8 +66,15 @@ Note: opencode already ships with [built-in agents](https://opencode.ai/docs/age
 |---------|-------------|
 | `/browser-test` | Test web UI in browser with screenshots |
 | `/commit` | Create a git commit with AI-generated message |
+| `/files-to-prompt` | Generate a prompt from repo files for use with LLMs |
 | `/review-docs` | Check documentation accuracy against code |
 | `/test-and-fix` | Run tests and fix any failures |
+
+### Tools
+
+| Tool | Description |
+|------|-------------|
+| `files-to-prompt` | Generate prompts from repo files using [files-to-prompt](https://github.com/simonw/files-to-prompt) |
 
 ### Skills
 
@@ -152,4 +159,12 @@ The browser skill requires Playwright:
 ```bash
 pip install playwright
 playwright install chromium
+```
+
+### files-to-prompt
+
+The `/files-to-prompt` command requires [files-to-prompt](https://github.com/simonw/files-to-prompt):
+
+```bash
+pip install files-to-prompt
 ```
