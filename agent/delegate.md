@@ -58,3 +58,8 @@ You may ask the user questions.
 The work is finished when all the work packages that have been created are moved into the completed directory, and the code is committed. 
 
 This does not necessarily mean that the project was a success. Just that you have completed the experimentation and reached a final conclusion.
+
+At the end of a long-running session, include at the end of your final report:
+- the number of work packages completed 
+- the number of agents spawned
+- the original goal, hypothesis, result and conclusion

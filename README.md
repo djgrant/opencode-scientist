@@ -1,5 +1,10 @@
-# opencode-scientist
+[Features](#features)<sup>↓</sup> • [Installation](#installation)<sup>↓</sup> • [User Guide](#user-guide)<sup>↓</sup>
 
+<h1>
+  OpenCode
+  <br \>
+  SCIENTIST
+</h1>
 
 An [OpenCode](https://opencode.ai)<sup>↗</sup> settings pack with custom agents, work packages, commands, and skills.
 
@@ -9,12 +14,16 @@ Excels at operating long-horizon, multi-task projects.
 
 ## Quick Start
 
-```bash
-$ opencode
-→ Help me set up https://github.com/djgrant/opencode-scientist
 ```
+$ opencode
 
-[Features](#features)<sup>↓</sup> • [Installation](#installation)<sup>↓</sup> • [User Guide](#user-guide)<sup>↓</sup>
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒
+█░                                                                      ░▒  
+█░  Help me set up https://github.com/djgrant/opencode-scientist        ░▒
+█░                                                                      ░▒  
+█░  Build   Claude Opus 4.5 (latest) Anthropic                          ░▒
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒
+```
 
 <br />
 
@@ -81,39 +90,39 @@ Custom tools available to agents.
 
 # Installation
 
-Clone this repo:
+First, install the settings pack globally, then initialise opencode-scientist per project.
+
+### Global Setup
+
+There are two ways to install:
+
+**1/ As an overlay config**
 
 ```bash
 git clone https://github.com/djgrant/opencode-scientist.git
-```
 
-Then, you have two options:
-
-**1) Load this repo as an overlay config**
-
-```bash
 # Add to your shell profile (.zshrc, .bashrc, etc.)
 export OPENCODE_CONFIG_DIR={path_to_cloned_repo}
 ```
 
-This loads the opencode-scientist settings _after_ your global and project settings. See [custom directory docs](https://opencode.ai/docs/config/#custom-directory)<sup>↗</sup>.
+Loads _after_ your global and project settings. See [custom directory docs](https://opencode.ai/docs/config/#custom-directory)<sup>↗</sup>.
 
-**2) Symlink your global OpenCode config to this repo**
+**2/ As your global config**
 
 ```bash
-ln -s {path_to_cloned_repo} ~/.config/opencode
+git clone https://github.com/djgrant/opencode-scientist.git ~/.config/opencode
 ```
 
-This loads the opencode-scientist _before_ your project settings.
+Loads _before_ your project settings. You can alternatively symlink to this location.
 
-## Project Setup
+### Project Setup
 
-Run `/init-scientist` in your project to:
+Run `/init-scientist` within your repo. This will set up:
 
-- Create the `.opencode/work/` directory structure for work packages
-- Create the `.opencode/learnings/` directory for project learnings
-- Install required dependencies (Playwright, files-to-prompt)
-- Optionally create an AGENTS.md template
+- `.opencode/work/` for work packages
+- `.opencode/learnings/` for project learnings
+- Playwright and files-to-prompt CLI tools
+- Optionally, an AGENTS.md template
 
 <br />
 
