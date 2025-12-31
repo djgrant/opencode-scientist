@@ -1,10 +1,10 @@
 # /init-scientist
 
-Initialize project with opencode-scientist structure and dependencies.
+Initialize project with the-scientist structure and dependencies.
 
 ## Instructions
 
-You are setting up a project to use the opencode-scientist configuration. Follow these steps:
+You are setting up a project to use the the-scientist configuration. Follow these steps:
 
 ### 1. Check Current State
 

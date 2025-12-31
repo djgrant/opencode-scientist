@@ -1,9 +1,9 @@
 [Features](#features)<sup>↓</sup> • [Installation](#installation)<sup>↓</sup> • [User Guide](#user-guide)<sup>↓</sup>
 
 <h1>
-  OpenCode
-  <br \>
-  SCIENTIST
+THE
+<br \>
+SCIENTIST
 </h1>
 
 An [OpenCode](https://opencode.ai)<sup>↗</sup> settings pack with custom agents, work packages, commands, and skills.
@@ -19,7 +19,7 @@ $ opencode
 
 █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒
 █░                                                                      ░▒  
-█░  Help me set up https://github.com/djgrant/opencode-scientist        ░▒
+█░  Help me set up https://github.com/djgrant/the-scientist             ░▒
 █░                                                                      ░▒  
 █░  Build   Claude Opus 4.5 (latest) Anthropic                          ░▒
 █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒
@@ -52,7 +52,7 @@ Slash commands for common workflows.
 | [`/browser-test`](command/browser-test.md) | Test web UI in browser with screenshots |
 | [`/commit`](command/commit.md) | Create a git commit with AI-generated message |
 | [`/files-to-prompt`](command/files-to-prompt.md) | Generate a prompt from repo files for use with LLMs |
-| [`/init-scientist`](command/init-scientist.md) | Initialise project with opencode-scientist structure and dependencies |
+| [`/init-scientist`](command/init-scientist.md) | Initialise project with the-scientist structure and dependencies |
 | [`/review-docs`](command/review-docs.md) | Check documentation accuracy against code |
 | [`/test-and-fix`](command/test-and-fix.md) | Run tests and fix any failures |
 
@@ -90,7 +90,7 @@ Custom tools available to agents.
 
 # Installation
 
-First, install the settings pack globally, then initialise opencode-scientist per project.
+First, install the settings pack globally, then initialise the-scientist per project.
 
 ### Global Setup
 
@@ -99,7 +99,7 @@ There are two ways to install:
 **1/ As an overlay config**
 
 ```bash
-git clone https://github.com/djgrant/opencode-scientist.git
+git clone https://github.com/djgrant/the-scientist.git
 
 # Add to your shell profile (.zshrc, .bashrc, etc.)
 export OPENCODE_CONFIG_DIR={path_to_cloned_repo}
@@ -110,7 +110,7 @@ Loads _after_ your global and project settings. See [custom directory docs](http
 **2/ As your global config**
 
 ```bash
-git clone https://github.com/djgrant/opencode-scientist.git ~/.config/opencode
+git clone https://github.com/djgrant/the-scientist.git ~/.config/opencode
 ```
 
 Loads _before_ your project settings. You can alternatively symlink to this location.
