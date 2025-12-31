@@ -4,20 +4,8 @@ description: Test web UI in browser
 
 ## Required skills:
 
-1) browser skill
-2) scientific-method skill
-
-## Prerequisites
-
-Start servers:
-
-```bash
-# Terminal 1: Start your dev server
-npm run dev  # or your project's dev command
-
-# Terminal 2: Start browser server
-python .opencode/skill/browser/screenshot.py start
-```
+1. browser
+2. scientific-method
 
 ## Workflow
 

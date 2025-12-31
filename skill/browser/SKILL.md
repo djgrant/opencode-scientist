@@ -3,13 +3,17 @@ name: browser
 description: When testing or verifying web UI use this skill to start the browser server, take screenshots to observe state, interact with elements, and verify visually.
 ---
 
-# Browser Interaction
+## Useful skills
+
+1. scientific-method (for more thorough investigation/debugging)
 
 ## Setup
 
+If not running already:
+
 ```bash
-# Start dev server (if not running)
-npm run dev &
+# Start dev server
+npm run dev # or your project's dev command
 
 # Start browser server
 python .opencode/skill/browser/screenshot.py start &
@@ -17,6 +21,10 @@ python .opencode/skill/browser/screenshot.py start &
 # Check status
 python .opencode/skill/browser/screenshot.py status
 ```
+
+## Teardown
+
+Ensure that any processes you started have been stopped, and ports are not left open.
 
 ## Commands
 
