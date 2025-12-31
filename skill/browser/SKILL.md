@@ -24,7 +24,12 @@ python .opencode/skill/browser/screenshot.py status
 
 ## Teardown
 
-Ensure that any processes you started have been stopped, and ports are not left open.
+Stop any processes you started:
+
+```bash
+python .opencode/skill/browser/screenshot.py stop
+# Kill any dev servers you started
+```
 
 ## Commands
 
@@ -50,6 +55,7 @@ python .opencode/skill/browser/screenshot.py <command> [args]
 2. List elements to discover selectors
 3. Interact with elements
 4. Screenshot to verify result
+5. Run teardown before ending session
 
 ## Screenshots
 
