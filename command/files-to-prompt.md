@@ -18,7 +18,7 @@ Extract from user request:
 
 ### Step 2: Find relevant files
 
-Use your tools (grep, glob, read) to explore the codebase and identify files matching the user's semantic query. Be thorough but focused.
+Use your tools (grep, glob, read) to explore the codebase and identify files matching the user's semantic query. Be thorough but focused. Do not include and ignored folders like .git and node_modules.
 
 ### Step 3: Confirm with the user
 
