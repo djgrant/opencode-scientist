@@ -87,13 +87,11 @@ Custom tools available to agents.
 
 # Installation
 
-First, install the settings pack globally, then initialise the-scientist per project.
+First, install the config pack globally, then initialise it for each project you want to use it in.
 
 ### Global Setup
 
-There are two ways to install:
-
-**1/ As an overlay config**
+**Option 1: As an overlay config**
 
 ```bash
 git clone https://github.com/djgrant/the-scientist.git
@@ -104,7 +102,7 @@ export OPENCODE_CONFIG_DIR={path_to_cloned_repo}
 
 Loads _after_ your global and project settings. See [custom directory docs](https://opencode.ai/docs/config/#custom-directory)<sup>↗</sup>.
 
-**2/ As your global config**
+**Options 2: As your global config**
 
 ```bash
 git clone https://github.com/djgrant/the-scientist.git ~/.config/opencode
