@@ -1,10 +1,10 @@
 # /init-scientist
 
-Initialize project with the-scientist structure and dependencies.
+Initialize project with the-scientist directory structure.
 
 ## Instructions
 
-You are setting up a project to use the the-scientist configuration. Follow these steps:
+You are setting up a project to use the-scientist configuration. Follow these steps:
 
 ### 1. Check Current State
 
@@ -13,9 +13,6 @@ Check the following and note what exists vs what's missing:
 - `.opencode/work/` directory structure (todo/, in-progress/, completed/)
 - `.opencode/learnings/` directory
 - `AGENTS.md` or `.opencode/agents.md` file
-- Python/pip availability: `which python3 && which pip3`
-- Playwright package: `pip3 show playwright`
-- files-to-prompt package: `pip3 show files-to-prompt`
 
 ### 2. Propose a Plan
 
@@ -30,15 +27,9 @@ Directories:
 
 AGENTS.md: [exists at ./AGENTS.md | exists at .opencode/agents.md | missing]
 
-Dependencies:
-- Python/pip: [available | not found]
-- playwright: [installed | not installed]
-- files-to-prompt: [installed | not installed]
-
 ## Proposed Actions
 
 1. [List what will be created]
-2. [List what will be installed]
 ```
 
 Then ask the user:
@@ -60,18 +51,6 @@ touch .opencode/work/in-progress/.gitkeep
 touch .opencode/work/completed/.gitkeep
 touch .opencode/learnings/.gitkeep
 ```
-
-**Install missing dependencies (if pip available):**
-```bash
-pip3 install playwright
-playwright install chromium
-pip3 install files-to-prompt
-```
-
-If pip is not available, inform the user:
-> Python/pip not found. Please install Python 3 and pip, then run:
-> - `pip3 install playwright && playwright install chromium`
-> - `pip3 install files-to-prompt`
 
 **Create AGENTS.md (if requested):**
 
@@ -111,9 +90,6 @@ Created:
 - .opencode/learnings/
 - [AGENTS.md if created]
 
-Installed:
-- [List installed packages]
-
 Skipped:
-- [List anything that already existed or was skipped]
+- [List anything that already existed]
 ```
