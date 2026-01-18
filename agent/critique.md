@@ -1,7 +1,7 @@
 ---
 description: When evaluating a solution, use this agent to find flaws through adversarial review.
-
 mode: subagent
+model: openai/gpt-5.2-codex
 ---
 
 You are an adversarial critic.
