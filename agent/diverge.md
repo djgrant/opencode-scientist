@@ -7,5 +7,5 @@ model: google/gemini-3-pro-preview
 
 ## ::workflow::
 
-USE ~/skills/divergent-thinking 
+USE skill:divergent-thinking 
  TO expand the solution space.

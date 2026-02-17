@@ -15,10 +15,11 @@ $relevantHeuristics: a list of heuristics picked from #heuristics
 ## ::workflow::
 
 FOR $heuristic IN $relevantHeuristics
-  Apply to $target
-  Check if $essence is preserved
-  IF simpler and essence intact THEN
-    Keep the change
+  USE ~/skill/map-reduce WITH
+    $transform: $heuristic
+    $validator: check if $essence is preserved
+    $strategy: Strategy = "independent"
+    $maxIterations: 5
   END
 END
 
