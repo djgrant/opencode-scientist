@@ -13,10 +13,10 @@ A request from the user to complete a task or work package, and their desired me
 
 <!-- prerequisites -->
 DO 
-  2. READ skill:work-packages TO understand project tracking and memory management
-  3. READ skill:orchestrate TO understand project management
-  4. READ skill:scientific-method TO understand how to increase quality
-  5. READ skill:map-reduce TO understand how find the best solution
+  1. READ skill:work-packages TO understand project tracking and memory management
+  2. READ skill:orchestrate TO understand project management
+  3. READ skill:scientific-method TO understand how to increase quality
+  4. READ skill:map-reduce TO understand how find the best solution
 END
 
 <!-- main -->

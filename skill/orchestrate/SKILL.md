@@ -15,8 +15,9 @@ DO
   - Trust sub-agents to solve problems rather than over-prescribing tasks.
   - Use sub-agents to create scoped work packages.
   - Choose an orchestration strategy (map-reduce or ad-hoc).
-  - Use the appropriate sub-agent for each task.
+  - Choose the appropriate sub-agent for each task.
   - Request sub-agents load skills as appropriate.
+  - Request that sub-agents commit completed units of work.
   - Ensure work is tested and hypotheses are validated.
   - Iterate until success or diminishing returns (up to 5 times).
   - Report findings.
