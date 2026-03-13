@@ -1,0 +1,7 @@
+{
+  "name": "the-scientist",
+  "dependencies": {
+    "@opencode-ai/plugin": "1.2.16",
+    "yaml": "^2.8.2"
+  }
+}
