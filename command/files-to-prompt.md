@@ -20,17 +20,11 @@ Extract from user request:
 
 Use your tools (grep, glob, read) to explore the codebase and identify files matching the user's semantic query. Be thorough but focused. Do not include and ignored folders like .git and node_modules.
 
-### Step 3: Confirm with the user
+### Step 3: Generate the prompt
 
-Before generating the prompt, show the user what you found.
+Use the `files-to-prompt` tool to generate the prompt (default is clipboard).
 
-Wait for user confirmation before proceeding.
-
-### Step 4: Generate the prompt
-
-Once confirmed, use the `files-to-prompt` tool to generate the prompt (default is clipboard).
-
-### Step 5: Report result
+### Step 4: Report result
 
 Tell the user:
 - How many files were included
