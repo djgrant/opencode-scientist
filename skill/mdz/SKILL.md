@@ -1,6 +1,6 @@
 ---
 name: mdz-language
-description: When interpreting MDZ blog, load this skill to understand the syntax.
+description: When interpreting MDZ documents, load this skill to understand the syntax.
 ---
 
 # MDZ Language Specification (Compact)
