@@ -1,3 +1,8 @@
+---
+name: mdz-language
+description: When interpreting MDZ blog, load this skill to understand the syntax.
+---
+
 # MDZ Language Specification (Compact)
 
 MDZ extends Markdown with a logic layer for LLM evaluation. It interleaves **Host Text** (raw Markdown) and **MDZ Blocks** (statements).
