@@ -1,3 +1,11 @@
+## 📦 Archived! 
+
+In December 2025 this was really useful working around some of the limitations of models, and maxing out their inherent capabilities. 
+
+Models and harnesses have moved on a lot since and most of these techniques work against what they now do natively. 
+
+---
+
 [Features](#features)<sup>↓</sup> • [Installation](#installation)<sup>↓</sup> • [User Guide](#user-guide)<sup>↓</sup>
 
 <h1>
@@ -6,7 +14,9 @@ THE
 SCIENTIST
 </h1>
 
+
 An [OpenCode](https://opencode.ai)<sup>↗</sup> config pack designed for operating long-horizon, multi-task projects.
+
 
 Models like Opus 4.5 are great for creative work in short back-and-forths; GPT-5.2 excels when left to complete more narrowly-scoped problems. This methodology aims to support the execution of long-running and open-ended projects by using simple mechanisms that resist LLMs' post-training impulses.
 
